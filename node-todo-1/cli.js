@@ -8,9 +8,8 @@ program.option("-x, --xxx", "this is new option");
 program
   .command("add <tasks...>")
   .description("add a task")
-  .action(function (task) {
-    const stringTask = task.join(" ");
-    api.add(stringTask)
+  .action(function (tasks) {
+    api.add(tasks).then()
   });
 
 // 添加clear子命令
