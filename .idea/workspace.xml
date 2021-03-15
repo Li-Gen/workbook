@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3c82f37e-20db-4de6-afd0-5000aaaee594" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-todo-1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/cli.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/esm.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/esm.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/node_modules/commander/typings/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/node_modules/commander/typings/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +57,7 @@
       <updated>1615678325518</updated>
       <workItem from="1615678347059" duration="1465000" />
       <workItem from="1615680286893" duration="11832000" />
-      <workItem from="1615770306026" duration="20665000" />
+      <workItem from="1615770306026" duration="22071000" />
     </task>
     <servers />
   </component>
