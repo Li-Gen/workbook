@@ -28,11 +28,13 @@ program
         })
     });
 
-if (process.argv.length === 2) {
-    console.log("我进来了")
-    void api.showAll()
-    console.log("66666")
-}
+// 无子命令时默认执行
+program
+    .command("show",{ isDefault: true })
+    .description("show all tasks")
+    .action(() => {
+        void api.showAll()
+    });
 
 program.parse(process.argv);
 
