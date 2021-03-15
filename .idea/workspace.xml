@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c82f37e-20db-4de6-afd0-5000aaaee594" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-todo-1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/node-todo-1/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.idea/node-todo-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-todo-1/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,6 +62,7 @@
       <workItem from="1615678347059" duration="1465000" />
       <workItem from="1615680286893" duration="11832000" />
       <workItem from="1615770306026" duration="22071000" />
+      <workItem from="1615802512140" duration="227000" />
     </task>
     <servers />
   </component>
@@ -69,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
