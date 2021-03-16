@@ -1,0 +1,11 @@
+<view class="wx-popup {{showPopup ? '' : 'bg'}}" hidden="{{showPopup}}">
+  <view class='popup-container'>
+    <view class="wx-popup-main">
+      <view class="wx-popup-title">{{title}}</view>
+      <view class="wx-popup-con">{{content}}</view>
+    </view>
+    <view class="wx-popup-btn" bindtap='_success'>
+      <text class="btn-ok">{{btn_ok}}</text>
+    </view>
+  </view>
+</view>

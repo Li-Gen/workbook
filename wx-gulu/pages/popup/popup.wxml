@@ -1,0 +1,12 @@
+<view class="container">
+<!--     demo1: 弹框-->
+      <view class="bnt-popup">
+        <button bindtap="showPopup">对话框</button>
+      </view>
+      <popup id='popup'
+          title='标题'
+          content='{{content}}'
+          btn_ok='确认'
+          bind:success="_success">
+      </popup>
+</view>

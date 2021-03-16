@@ -1,0 +1,12 @@
+<view class="wx-actionSheet {{action ? '' : 'bg'}}" hidden="{{action}}">
+    <view class="actionSheet-container">
+        <view class="actionSheet-option">
+            <view class="item" wx:for="{{actions}}" bind:tap="_option" wx:key="index" data-index="{{item.index}}">{{item.name}}</view>
+        </view>
+        <view class="actionSheet-btn">
+            <view class="btn-cancel">
+                <button type="default" bind:tap="_cancel">{{btn_cancel}}</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<!--demo2: 上拉菜单-->
+<view class="container">
+  <view class="bnt-action">
+    <button  bind:tap="showAction">上拉菜单</button>
+  </view>
+  <action-sheet
+          actions="{{actions}}"
+          btn_cancel="取消"
+          id="actionSheet"
+          bind:cancel="_cancel"
+          bind:option="_option">
+  </action-sheet>
+</view>
