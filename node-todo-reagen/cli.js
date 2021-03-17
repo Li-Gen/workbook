@@ -1,8 +1,10 @@
-const {program} = require("commander");
+#!/usr/bin/env node
+const program= require("commander");
 const api = require('./index.js');
+const pkg = require("./package");
 
-// 添加option
-program.option("-x, --xxx", "this is new option");
+// 添加版本号
+program.version(pkg.version);
 
 // 添加add子命令
 program

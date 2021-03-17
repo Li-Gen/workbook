@@ -2,13 +2,16 @@
 
 ## 主要功能
 
-1. 运行`node cli` : 可以查看当前所有的todo
+1. 安装：运行`yarn global add node-todo-reagen`
 
-2. 主要子命令: 
+2. 更新：运行`yarn global add node-todo-reagen@latest`选择最新版本即可
 
-    - `node cli add + todo名字` : 可单个添加,也支持一次添加多个todo
+3. 主要命令: 
+    - 运行 `todo`就可以展示全部的todo任务;
+
+    - `todo add + todo名字` : 可单个添加,也支持一次添加多个todo
     
-    - `node clear` : 一次清除所有的todo
+    - `todo clear` : 一次清除所有的todo
     
 3. 提供的一级子选项:
     

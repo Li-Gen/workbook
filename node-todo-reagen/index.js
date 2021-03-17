@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const db = require('./db.js');
 const inquirer = require('inquirer');
 

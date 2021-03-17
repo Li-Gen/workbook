@@ -3,8 +3,8 @@
   "bin": {
     "todo": "cli.js"
   },
-  "files": ["cli.js","index.js","db.js"],
-  "version": "1.0.0",
+  "files": ["cli.js","db.js","index.js"],
+  "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
