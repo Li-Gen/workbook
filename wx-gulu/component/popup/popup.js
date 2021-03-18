@@ -55,4 +55,4 @@ Component({
       this.triggerEvent("success");
     }
   }
-})
+});

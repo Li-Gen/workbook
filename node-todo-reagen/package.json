@@ -3,12 +3,22 @@
   "bin": {
     "todo": "cli.js"
   },
-  "files": ["cli.js","db.js","index.js"],
+  "files": [
+    "cli.js",
+    "db.js",
+    "index.js"
+  ],
   "version": "0.0.4",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "^7.1.0",
     "inquirer": "7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }

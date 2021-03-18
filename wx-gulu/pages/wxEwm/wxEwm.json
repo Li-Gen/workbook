@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ewm":"/component/wxEwm/wxEwm"
+  }
+}

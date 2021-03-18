@@ -13,7 +13,7 @@ const db = {
     // 如果不给path传路径默认就是dbPath
     read(path = dbPath) {
         return new Promise((resolve, reject) => {
-            fs.readFile(dbPath, {flag: 'a+'}, (err1, data) => {
+            fs.readFile(path, {flag: 'a+'}, (err1, data) => {
                 if (err1) {
                     return reject(err1)
                 }

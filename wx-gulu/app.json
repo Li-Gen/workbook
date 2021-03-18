@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/popup/popup",
-    "pages/actionSheet/actionSheet"
+    "pages/actionSheet/actionSheet",
+    "pages/wxEwm/wxEwm",
+    "component/wxEwm/wxEwm"
   ],
   "window": {
     "backgroundTextStyle": "light",

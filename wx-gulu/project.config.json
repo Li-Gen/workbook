@@ -55,6 +55,13 @@
 					"pathName": "pages/actionSheet/actionSheet",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "二维码",
+					"pathName": "component/wxEwm/wxEwm",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
