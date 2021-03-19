@@ -62,6 +62,13 @@
 					"pathName": "component/wxEwm/wxEwm",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "栅格布局12列",
+					"pathName": "pages/layout/layout",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

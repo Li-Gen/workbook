@@ -1,0 +1,19 @@
+<view class="row">
+    <view class="col ">
+        <view class="col-3 in">span:3</view>
+        <view class="col-9 in">span:9</view>
+    </view>
+    <view class="col">
+        <view class="col-5 in">span:5</view>
+        <view class="col-5 in">span:5</view>
+        <view class="col-2 in">span:2</view>
+    </view>
+    <view class="col">
+        <view class="col-2 in">span:2</view>
+        <view class="col-2 in">span:2</view>
+         <view class="col-2 in">span:2</view>
+        <view class="col-2 in">span:2</view>
+        <view class="col-2 in">span:2</view>
+        <view class="col-2 in">span:2</view>
+    </view>
+</view>

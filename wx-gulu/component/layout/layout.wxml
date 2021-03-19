@@ -1,0 +1,7 @@
+<!-- 只要css样式即可实现栅格布局，样式已加到app.wxss中 -->
+<view class="row">
+    <view class="col">
+        <view class="col-3"></view>
+        <view class="col-9"></view>
+    </view>
+</view>
