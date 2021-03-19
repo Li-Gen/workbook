@@ -9,7 +9,7 @@ fs.setMock = (path, error, data) => {
 };
 // 对拷贝过来的fs中的readFile进行覆盖
 fs.readFile = (path, option, callback) => {
-    // 用户有可能不穿option fs.readFile('/xxx',fn)
+    // 用户有可能不传option fs.readFile('/xxx',fn)
     if (callback === undefined) {
         callback = option
     }
