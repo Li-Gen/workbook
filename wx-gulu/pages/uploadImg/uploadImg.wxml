@@ -1,0 +1,13 @@
+<view class="col">
+	<view class="file" wx:for="{{fileList}}" wx:key="index">
+		<image mode="aspectFill" src="{{item}}"/>
+		<view class="del" data-index="{{index}}" bindtap="delFile">
+			<image mode="widthFix" src="https://sucai.suoluomei.cn/sucai_zs/images/20200521115446-38.png" />
+		</view>
+	</view>
+	<view class="update" wx:if="{{upload}}" bindtap="uploadFile">
+		<image mode="widthFix" src="https://sucai.suoluomei.cn/sucai_zs/images/20200521103739-37.png" class="img"/>
+		<text class="addImg" wx:if="{{photo === 0}}">添加照片</text>
+		<text wx:if="{{photo === 1}}">{{count}}/5</text>
+	</view>
+</view>

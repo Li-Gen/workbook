@@ -1,0 +1,29 @@
+<view bindtap="closeCalendar" class="mask {{show?'mask_show':'mask_hide'}}"></view>
+<view class="popup {{show?'popup_show':'popup_hide'}}">
+	<view class="popup_head">
+		<view bindtap="closeCalendar" class="popup_cancel">取消</view>
+		<view class="popup_month">
+			<view bindtap="prevMonth" class="popup_prev"></view>
+			<picker mode="date" bindchange="changeMonth" fields="month" value="{{year}}-{{(month+1)}}" start="{{startDate[0]?startDate[0]+'-'+(startDate[1]+1)+'-1':''}}" end="{{endDate[0]?endDate[0]+'-'+(endDate[1]+1)+'-1':''}}">
+				<view class="popup_month_picker">{{year}}年{{(month+1)}}月</view>
+			</picker>
+			<view bindtap="nextMonth" class="popup_next"></view>
+		</view>
+	</view>
+	<view class="popup_body">
+		<view class="cal">
+			<view class="cal_week">
+				<view class="cal_week_text">日</view>
+				<view class="cal_week_text">一</view>
+				<view class="cal_week_text">二</view>
+				<view class="cal_week_text">三</view>
+				<view class="cal_week_text">四</view>
+				<view class="cal_week_text">五</view>
+				<view class="cal_week_text">六</view>
+			</view>
+			<view class="cal_days">
+				<view wx:for="{{days}}" wx:key="index" bindtap="changeDate" data-i="{{index}}" class="cal_day {{item.current?'current':''}} {{item.disabled?'disabled':''}}">{{item.day>0?item.day:''}}</view>
+			</view>
+		</view>
+	</view>
+</view>

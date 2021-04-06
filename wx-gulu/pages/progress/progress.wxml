@@ -1,0 +1,8 @@
+    <view class="progress-bar">
+    	<progress percent="{{activeProgress}}" stroke-width="18" backgroundColor="#464444" activeColor="#539efa" />
+    	<text class="text">{{index+1}}/{{len}}</text>
+    	<view class="btn-wrap">
+    		<button class="btn-next" bindtap="onNext" >下一页</button>
+    		<button class="btn-pre" bindtap="onPre" >上一页</button>
+    	</view>
+    </view>

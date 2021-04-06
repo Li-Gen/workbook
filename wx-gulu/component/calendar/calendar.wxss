@@ -1,0 +1,201 @@
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9000;
+}
+
+.mask_show {
+  animation: mask_show ease 0.3s forwards;
+}
+
+@keyframes mask_show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mask_hide {
+  animation: mask_hide ease 0.3s forwards;
+}
+
+@keyframes mask_hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9001;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.popup_show {
+  animation: popup_show ease 0.3s forwards;
+}
+
+@keyframes popup_show {
+  0% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.popup_hide {
+  animation: popup_hide ease 0.3s forwards;
+}
+
+@keyframes popup_hide {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+}
+
+.popup_head {
+  border-top: 2rpx solid #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  font-size: 34rpx;
+}
+
+.popup_cancel {
+  color: #888;
+}
+
+.popup_month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup_prev,
+.popup_next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rpx;
+}
+
+.popup_prev::before,
+.popup_next::before {
+  display: block;
+  content: '';
+  box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12rpx;
+  height: 24rpx;
+  border-top: 12rpx solid #fff;
+  border-bottom: 12rpx solid #fff;
+}
+
+.popup_prev {
+  margin-right: 20rpx;
+}
+
+.popup_prev::before {
+  border-right: 12rpx solid #888;
+}
+
+.popup_next {
+  margin-left: 20rpx;
+}
+
+.popup_next::before {
+  border-left: 12rpx solid #888;
+}
+
+.popup_month_picker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup_month_picker::after {
+  margin-left: 8rpx;
+  display: block;
+  content: '';
+  box-sizing: border-box;
+  width: 24rpx;
+  height: 12rpx;
+  border-top: 12rpx solid #888;
+  border-left: 12rpx solid #fff;
+  border-right: 12rpx solid #fff;
+}
+
+.popup_body {
+  border-top: 2rpx solid #f6f6f6;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+}
+
+.cal {
+  width: 728rpx;
+  margin: 0 auto;
+}
+
+.cal_week {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cal_week_text {
+  width: 104rpx;
+  padding: 8rpx 0;
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.cal_days {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+}
+
+.cal_day {
+  width: 104rpx;
+  border-top: 2rpx solid #eee;
+  padding: 16rpx 0;
+  text-align: center;
+}
+
+.cal_days .current {
+  background: #1890ff;
+  color: #fff;
+}
+
+.cal_days .disabled {
+  color: #ccc;
+}

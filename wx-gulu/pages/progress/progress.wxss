@@ -1,0 +1,17 @@
+.btn-wrap{
+  width: 100;
+  display: flex;
+}
+.btn-wrap button{
+  bottom: 25rpx;
+  margin-top: 25%;
+  width: 30% !important;
+  background: #00b26a;
+  color: #fff;
+}
+.text{
+  position: fixed;
+  top: 0;
+  left: 47%;
+  color: #fff;
+}

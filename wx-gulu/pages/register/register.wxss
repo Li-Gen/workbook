@@ -1,0 +1,35 @@
+.section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+input{width: 70%}
+.section-gender radio-group{
+  margin-right: 275rpx;
+}
+.section-married radio-group{
+  margin-right: 212rpx;
+}
+.section-gender radio-group label:first-child,
+.section-married radio-group label:first-child{
+  margin-right: 35rpx;
+}
+.section-motive{padding-right: 36rpx;}
+.section-motive image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.section-motive picker{
+  margin-right: 51%;
+}
+.btn-area{position: absolute;bottom: 2%;left: 25%;}
+.btn-area .btn-sub{color: #fff;background: #1aad19;}
+.must:before{
+  content: "*";
+  color: red;
+}
+.picker-edu{
+  margin-right: 60%;
+}

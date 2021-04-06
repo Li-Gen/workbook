@@ -4,7 +4,19 @@
     "pages/actionSheet/actionSheet",
     "pages/wxEwm/wxEwm",
     "component/wxEwm/wxEwm",
-    "pages/layout/layout"
+    "pages/layout/layout",
+    "pages/area/area",
+    "pages/tabBar/tabBar",
+    "pages/slideBar/slideBar",
+    "pages/dateTimePicker/dateTimePicker",
+    "pages/calender/calender",
+    "pages/radar/radar",
+    "pages/dropDownMenu/dropDownMenu",
+    "pages/collapse/collapse",
+    "pages/swiper/swiper",
+    "pages/progress/progress",
+    "pages/register/register",
+    "pages/uploadImg/uploadImg"
   ],
   "window": {
     "backgroundTextStyle": "light",

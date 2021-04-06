@@ -69,6 +69,89 @@
 					"pathName": "pages/layout/layout",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "三级联动",
+					"pathName": "pages/area/area",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "tab导航栏",
+					"pathName": "pages/tabBar/tabBar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "侧边导航",
+					"pathName": "pages/slideBar/slideBar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日期选择",
+					"pathName": "pages/dateTimePicker/dateTimePicker",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日历选择",
+					"pathName": "pages/calender/calender",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "雷达图",
+					"pathName": "pages/radar/radar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "下拉菜单",
+					"pathName": "pages/dropDownMenu/dropDownMenu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "手风琴",
+					"pathName": "pages/collapse/collapse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "轮播",
+					"pathName": "pages/swiper/swiper",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进度条",
+					"pathName": "pages/progress/progress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "上传图片",
+					"pathName": "pages/uploadImg/uploadImg",
+					"scene": null
 				}
 			]
 		}

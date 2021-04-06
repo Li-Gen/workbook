@@ -1,0 +1,52 @@
+<view class="tips-view">普通用法</view>
+<v-collapse title="标题一" 
+            index="1"
+            actionIndex="{{oneActionIndex}}"
+            bind:switchCollapseItem="oneSwiteFun">
+  <view slot="collapse-item">今天天气真好, 适合摸鱼</view>
+</v-collapse>
+<v-collapse title="标题二"
+            index="2"
+            actionIndex="{{oneActionIndex}}"
+            bind:switchCollapseItem="oneSwiteFun">
+  <view slot="collapse-item">今天天气真好, 适合摸鱼</view>
+</v-collapse>
+<v-collapse title="标题三"
+            index="3"
+            actionIndex="{{oneActionIndex}}"
+            bind:switchCollapseItem="oneSwiteFun">
+  <view slot="collapse-item">今天天气真好, 适合摸鱼</view>
+</v-collapse>
+
+
+
+<view class="tips-view">2、自定义内容样式</view>
+<block wx:for="{{collapseList}}"
+       wx:key="index">
+  <v-collapse title="{{item.title}}"
+              index="{{index}}"
+              actionIndex="{{twoActionIndex}}"
+              collapse-item-class="item-class"
+              bind:switchCollapseItem="twoSwiteFun">
+    <view slot="collapse-item">{{item.content}}</view>
+  </v-collapse>
+</block>
+
+
+
+<view class="tips-view">3、自定义内容样式 and 自定义右侧icon</view>
+<block wx:for="{{collapseList}}"
+       wx:key="index">
+  <v-collapse title="{{item.title}}"
+              index="{{index}}"
+              actionIndex="{{threeActionIndex}}"
+              collapse-item-class="item-class"
+              customRightIcon="true"
+              bind:switchCollapseItem="threeSwiteFun">
+    <image slot="right-icon"
+           src="/image/bottom-arrow.png"
+           class="right-icon"></image>
+    <view slot="collapse-item">{{item.content}}</view>
+  </v-collapse>
+</block>
+

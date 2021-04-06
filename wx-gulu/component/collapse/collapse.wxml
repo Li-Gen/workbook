@@ -1,0 +1,22 @@
+<view class="collapse">
+    <view class="collapse-box custom-collapse"
+          catch:tap="switchCollapseList"
+          data-index="{{index}}">
+        <view class="title custom-title">{{title}}</view>
+        <view wx:if="{{customRightIcon}}"
+              class="{{index == actionIndex ? 'routerIcon' : 'resetIcon'}}">
+            <slot name="right-icon"></slot>
+        </view>
+        <block wx:else>
+            <image src="{{rightIcon}}"
+                   class="rightIcon {{index == actionIndex ? 'routerIcon' : 'resetIcon'}}"></image>
+        </block>
+    </view>
+
+    <view class="collapse-content"
+          style="height: {{index == actionIndex ? collapseItemHeihgt : '0'}}px">
+        <view class="collapse-item-class">
+            <slot name="collapse-item"></slot>
+        </view>
+    </view>
+</view>

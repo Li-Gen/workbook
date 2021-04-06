@@ -1,0 +1,70 @@
+<view class="container">
+    <view class="form-body">
+        <form class="form" bindsubmit="formSubmit">
+            <view class="section section-name">
+                <view class="section-name-title must">姓名</view>
+                <input name="name" value="{{form.name}}" placeholder="请输入姓名" focus bindblur="checkName" type="text"/>
+            </view>
+            <view class="section section-gender">
+                <view class="section-name-title must">性别</view>
+                <radio-group name="gender">
+                    <label>
+                        <radio value="{{form.gender[0].value}}" checked>男</radio>
+                    </label>
+                       <label>
+                        <radio value="{{form.gender[1].value}}">女</radio>
+                    </label>
+                </radio-group>
+            </view>
+             <view class="section section-age">
+                <view class="section-age-title must">年龄</view>
+                <input name="age" value="{{form.age}}" placeholder="请输入年龄" type="number" bindblur="checkAge"/>
+            </view>
+            <view class="section section-married">
+                <view class="section-married-title">婚否</view>
+                <radio-group name="married">
+                    <label>
+                        <radio value="{{form.married[0].value}}" checked>未婚</radio>
+                    </label>
+                       <label>
+                        <radio value="{{form.married[1].value}}">已婚</radio>
+                    </label>
+                </radio-group>
+            </view>
+            <view class="section section-edu">
+                <view class="section-edu-title must">学历</view>
+               <picker class="picker-edu" name="edu" bindchange="eduChange" range="{{eduArray}}" value='{{eduArray[index]}}'>
+               {{eduArray[index]}}
+               </picker>
+            </view>
+             <view class="section section-job">
+                <view class="section-job-title must">岗位</view>
+                <input name="job" value="{{form.job}}" placeholder="请输入岗位" type="text" maxlength="15"/>
+            </view>
+             <view class="section section-company">
+                <view class="section-company-title">所在单位</view>
+                <input name="company" value="{{form.company}}" placeholder="请输入所在单位" type="text" maxlength="15"/>
+            </view>
+              <view class="section section-school">
+                <view class="section-school-title">手机号</view>
+                <input name="phone" maxlength="11" value="{{form.phone}}" placeholder="请输入手机号" type="text"  bindblur="checkPhone"/>
+            </view>
+               <view class="section section-profession">
+                <view class="section-profession-title">身份证</view>
+                <input name="profession" value="{{profession}}" placeholder="请输入身份证" type="text" bindblur="checkIdentify"/>
+            </view>
+            <view class="section section-motive">
+                <view class="section-motive-title must">测评动机</view>
+                <picker name="motive" bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}">
+                    <view class="picker">
+                        {{array[index]}}
+                    </view>
+                </picker>
+            </view>
+            <view class="btn-area">
+                <button class="btn-sub" formType="submit">提交</button>
+            </view>
+        </form>
+    </view>
+</view>
+

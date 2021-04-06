@@ -1,0 +1,19 @@
+<view class="test">
+	<view class="header">
+		<swiper circular="true" indicator-dots indicator-color="#ababab" current="{{currentIndex}}" duration="500" bindchange="changeIndex" bindanimationfinish="changeFinish">
+			<swiper-item catchtouchmove="stopTouchMove">
+				<image src="/image/exam-test.jpg" mode="scaleToFill" class="slide-image" />
+			</swiper-item>
+			<swiper-item catchtouchmove="stopTouchMove">
+				<image src="/image/exam-test.jpg" mode="scaleToFill" class="slide-image" />
+			</swiper-item>
+			<swiper-item catchtouchmove="stopTouchMove">
+				<image src="/image/exam-test.jpg" mode="scaleToFill" class="slide-image" />
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="btn-wrap">
+		<button class="btn-next" bindtap="toRight">下一页</button>
+		<button class="btn-pre" bindtap="toLeft">上一页</button>
+	</view>
+</view>
