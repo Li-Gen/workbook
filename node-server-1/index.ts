@@ -8,32 +8,19 @@ const publicDir = p.resolve(__dirname, 'public');
 
 server.on("request", (request: IncomingMessage, response: ServerResponse) => {
     console.log(request.method);
-    console.log("url",request.url);
+    console.log("url", request.url);
     console.log(request.headers);
-    const {pathname,search}= new URL(request.url,`http://${request.headers.host}`);
-    switch (pathname) {
-        case '/index.html':
-            response.setHeader("Content-Type", "text/html;charset=utf-8");
-            fs.readFile(p.resolve(publicDir, 'index.html'), (error, data) => {
-                if (error) throw  error;
-                response.end(data.toString());
-            });
-            break;
-        case  '/style.css':
-            response.setHeader("Content-Type", "text/css;charset=utf-8");
-            fs.readFile(p.resolve(publicDir, 'style.css'), (error, data) => {
-                if (error) throw  error;
-                response.end(data.toString())
-            });
-            break;
-        case '/main.js':
-            response.setHeader("Content-Type", "text/javascript;charset=utf-8");
-            fs.readFile(p.resolve(publicDir, 'main.js'), (error, data) => {
-                if (error) throw  error;
-                response.end(data.toString());
-            });
-            break;
-    }
-
+    // 使用WHATWG的URL拿到url和查询参数
+    const {pathname, search} = new URL(request.url, `http://${request.headers.host}`);
+    // 拿到用户输入的任意路径
+    const fileName = pathname.substr(1);
+    fs.readFile(p.resolve(publicDir, fileName), (error, data) => {
+        if (error) {
+            response.statusCode = 404;
+            response.end('你访问的网页搬家了！')
+        } else {
+            response.end(data.toString());
+        }
+    });
 });
 server.listen(8888);
