@@ -1,7 +1,13 @@
 {
   "name": "translate-reagen",
   "version": "0.0.1",
-  "main": "index.js",
+  "bin": {
+    "fany": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
+  "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
     "start": "ts-node-dev src/cli.ts"

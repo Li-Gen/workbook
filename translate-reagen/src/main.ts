@@ -3,7 +3,10 @@ import * as querystring from "querystring";
 import {appId, appidSecret} from "./private";
 import md5 = require("md5");
 
-const errorMap = {
+type ErrorMap = {
+    [k:string] : string
+};
+const errorMap:ErrorMap = {
     52000: "成功",
     52001: "请求超时",
     52002: "系统错误",
@@ -19,7 +22,7 @@ const errorMap = {
     90107: "认证未通过或未生效"
 };
 
-export const translate = (word) => {
+export const translate = (word:string) => {
     const salt = Math.random();
     const sign = md5(appId + word + salt + appidSecret);
     let from,to;
@@ -43,7 +46,7 @@ export const translate = (word) => {
         method: 'GET'
     };
     const request = https.request(options, (response) => {
-        let chunks = [];
+        let chunks:Buffer[] = [];
         response.on('data', (chunk) => {
             chunks.push(chunk)
         });
